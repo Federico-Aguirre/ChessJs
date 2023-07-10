@@ -1,0 +1,6 @@
+import * as Pieces from './js files/pieces.js'
+import { gameBoard, startPieces, createBoard } from './js files/createBoard.js'
+import { changePlayer } from './js files/changePlayer.js'
+import { dragStart, dragOver, dragDrop } from './js files/dragFunctions.js'
+import { pieceMovements } from './js files/pieceMovements.js'
+import { checkForWin } from './js files/checkForCheck.js'

@@ -1,0 +1,83 @@
+main {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--darkBackgroundColor);
+    color: var(--bright);
+}
+
+#gameboard {
+    height: 320px;
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(8, 40px);
+    border: 30px solid var(--dark);
+}
+
+.square {
+    height: 40px;
+    width: 40px;
+}
+
+.square img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    position: relative;
+    z-index: -9;
+    /*Is important to have this z-index otherwise priorities change in javascript funciont when selecting firstChilds for example*/
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
+}
+
+.darkSquare {
+    background-color: var(--darkSquare);
+    border: 1px solid var(--dark);
+}
+
+.brightSquare {
+    background-color: var(--brightSquare);
+    border: 1px solid var(--dark);
+}
+
+
+.whitePiecesBgColor,
+.blackPiecesBgColor {
+    height: 39px;
+    width: 39px;
+    background-color: var(--pieceBgColor);
+}
+
+.whitePremoveBgColor,
+.blackPremoveBgColor {
+    background-color: var(--premoveBgColor);
+}
+
+.forbidden {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    #gameboard {
+        height: 480px;
+        width: 480px;
+        grid-template-columns: repeat(8, 60px);
+        grid-template-rows: repeat(8, 60px);
+    }
+
+    .square {
+        height: 60px;
+        width: 60px;
+    }
+
+    .square img {
+        height: 50px;
+        width: 50px;
+        margin: 5px 5px 1px 5px;
+    }
+}

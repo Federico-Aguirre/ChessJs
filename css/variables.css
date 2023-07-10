@@ -1,0 +1,9 @@
+:root {
+    --darkBackgroundColor: hsl(48, 5%, 22%);
+    --dark: hsl(0, 0%, 10%);
+    --bright: hsl(0, 0%, 90%);
+    --darkSquare: rgb(119, 149, 86);
+    --brightSquare: rgb(235, 236, 208);
+    --pieceBgColor: hsla(66, 85%, 60%, 0.75);
+    --premoveBgColor: hsla(2, 100%, 55%, 0.75);
+}
